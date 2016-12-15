@@ -3,8 +3,8 @@
 
 
 ## Requirements
-Create Medical Record Online
-Secure the records
+- Create Medical Record Online
+- Secure the records
 
 ## Installation
 
