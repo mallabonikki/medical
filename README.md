@@ -2,14 +2,11 @@
 
 ## Requirements
 - Create Medical Record Online
-- Secure the records
+- Secure the records and website
+- Use SQL/Relational Database
 
 ## Installation
-
 - Clone the repository and simply run `npm install` from the root folder.
-
-## Configuration
-
 
 ## Language and Framwork
 - Nodejs + Express + Postgresql
