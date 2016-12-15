@@ -1,0 +1,59 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Medical Patient's Records</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="logout-link" href="/logout">Logout</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" id="search" >
+        <input type="text" class="form-control" placeholder="Search...">
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class="active"><a href="#">Menu 1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <h1 class="page-header">Patients Record</h1>
+      {{!--{{#rows}}--}}
+        <h2 class="sub-header"> Dr. {{rows.1.firstName}} {{rows.1.lastName}} - Patients </h2>
+      {{!--{{/rows}}--}}
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Address</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each rows}}
+              <tr>
+                <td> {{this.pFirstname}} </td>
+                <td> {{this.pLastname}} </td>
+                <td> {{this.pAge}} </td>
+                <td> {{this.pGender}} </td>
+                <td> {{this.pAddress}} </td>
+                <td> {{this.pEmail}} </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
